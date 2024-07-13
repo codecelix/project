@@ -1,0 +1,79 @@
+/* body */
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background: url('siuuu.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header h1 {
+  color: black; 
+  font-size: 2em; 
+  margin: 0; 
+  padding: 20px; 
+  text-align: center; 
+  border-radius: 10px; 
+}
+
+header {
+  margin-top: 5rem;
+  text-align: center;
+  display: block;
+  color: #fff;
+}
+
+.back-button {
+  background-color: #4167ceb4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+  position: fixed;
+  margin-left: 3rem;
+
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px; /* Menetapkan tinggi gambar yang seragam */
+  object-fit: cover; /* Menyesuaikan gambar agar tetap proporsional */
+}
+
+.card-content {
+  padding: 15px;
+  height: 200px; /* Menetapkan tinggi konten teks */
+  overflow-y: auto; /* Menambahkan scrollbar jika teks terlalu panjang */
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1em;
+  color: #333;
+}

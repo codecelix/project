@@ -1,0 +1,91 @@
+/*body*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('bg.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.header {
+  margin-top: 5rem;
+  text-align: center;
+  display: block;
+
+}
+
+.back-button {
+  background-color: #4167ceb4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+  position: fixed;
+  margin-left: 1.2rem;
+
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* zigzag */
+.zigzag {
+  display: flex;
+  flex-direction: column;
+}
+
+.zigzag-item {
+  display: flex;
+  margin: 10px 0;
+  align-items:flex-start;
+}
+
+.zigzag-item .content {
+  flex: 1;
+  padding: 20px;
+}
+
+.zigzag-item .image {
+  flex: 1;
+}
+
+.zigzag-item .image img {
+  width: 20rem;
+  height: 15rem;
+  border-radius: 20px;
+
+}
+
+.zigzag-item.left .content {
+  order: 1;
+  text-align: right;
+}
+
+.zigzag-item.left .image {
+  order: 2;
+  margin-left: 1rem;
+  margin-right: -20rem;
+}
+
+.zigzag-item.right .content {
+  order: 2;
+}
+
+.zigzag-item.right .image {
+  order: 1;
+  margin-right: -20rem;
+}
+
+/* format ukuran */
+@media (max-width: 768px) {
+  .zigzag-item {
+      flex-direction: column;
+  }
+  .zigzag-item .content, .zigzag-item .image {
+      order: initial;
+  }
+}
